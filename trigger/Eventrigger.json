@@ -1,0 +1,24 @@
+{
+	"name": "Eventrigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "parquet",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/parquet/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/23c59900-6c17-42e2-8589-b54aecf77ee4/resourceGroups/DP203/providers/Microsoft.Storage/storageAccounts/adlsgen1101",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
