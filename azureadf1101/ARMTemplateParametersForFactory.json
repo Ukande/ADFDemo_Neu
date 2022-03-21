@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "azureadf1101"
+		},
+		"LS_Gen2_accountKey": {
+			"value": ""
+		},
+		"LS_Gen2_1_accountKey": {
+			"value": ""
+		},
+		"LS_SQLServer_connectionString": {
+			"value": ""
+		},
+		"LS_Gen2_properties_typeProperties_url": {
+			"value": "https://sqlvave52ozeawpuzw.dfs.core.windows.net"
+		},
+		"LS_Gen2_1_properties_typeProperties_url": {
+			"value": "https://adlsgen1101.dfs.core.windows.net"
+		},
+		"Eventrigger_properties_typeProperties_scope": {
+			"value": "/subscriptions/23c59900-6c17-42e2-8589-b54aecf77ee4/resourceGroups/DP203/providers/Microsoft.Storage/storageAccounts/adlsgen1101"
+		},
+		"Trigger_x4e_properties_pipeline_parameters_windowStart": {
+			"value": "@trigger().outputs.windowStartTime"
+		}
+	}
+}
