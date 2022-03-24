@@ -31,10 +31,6 @@
 			"type": "string",
 			"defaultValue": "/subscriptions/23c59900-6c17-42e2-8589-b54aecf77ee4/resourceGroups/DP203/providers/Microsoft.Storage/storageAccounts/adlsgen1101"
 		},
-		"Trigger_x4e_properties_pipeline_parameters_windowStart": {
-			"type": "string",
-			"defaultValue": "@trigger().outputs.windowStartTime"
-		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -97,9 +93,6 @@
 					},
 					"Eventrigger_properties_typeProperties_scope": {
 						"value": "[parameters('Eventrigger_properties_typeProperties_scope')]"
-					},
-					"Trigger_x4e_properties_pipeline_parameters_windowStart": {
-						"value": "[parameters('Trigger_x4e_properties_pipeline_parameters_windowStart')]"
 					}
 				}
 			},

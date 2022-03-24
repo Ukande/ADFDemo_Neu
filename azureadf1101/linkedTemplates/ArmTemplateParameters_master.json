@@ -23,9 +23,6 @@
 		"Eventrigger_properties_typeProperties_scope": {
 			"value": "/subscriptions/23c59900-6c17-42e2-8589-b54aecf77ee4/resourceGroups/DP203/providers/Microsoft.Storage/storageAccounts/adlsgen1101"
 		},
-		"Trigger_x4e_properties_pipeline_parameters_windowStart": {
-			"value": "@trigger().outputs.windowStartTime"
-		},
 		"containerUri": {
 			"value": ""
 		},
